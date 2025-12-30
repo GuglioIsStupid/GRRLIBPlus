@@ -1,4 +1,4 @@
-﻿# GRRLIB
+﻿# GRRLIBPlus
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/GRRLIB/GRRLIB/ci.yml?logo=github)](https://github.com/GRRLIB/GRRLIB/actions)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/02847b348a1e4e6b850f956541ef2361)](https://app.codacy.com/gh/GRRLIB/GRRLIB/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
@@ -27,6 +27,8 @@
   * ...When you say "free" do you actually mean something else?
 
 ## Introduction
+
+GRRLIBPlus is a fork of GRRLIB adding a few more required features for my projects (such as [LOVEPower](https://github.com/GuglioIsStupid/LOVEPower))
 
 GRRLIB is a C/C++ 2D/3D graphics library for Wii application developers.  It is
 essentially a wrapper which presents a friendly interface to the Nintendo GX
