@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 #include <math.h>
 
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 // User should not directly modify these
 Mtx       _GRR_view;  // Should be static as soon as all light functions needing this var will be in this file ;)

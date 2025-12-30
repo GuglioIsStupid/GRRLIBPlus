@@ -29,7 +29,7 @@ endif
 # SOURCES is a list of directories containing source code
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
-TARGET		:=	grrlib
+TARGET		:=	grrlibplus
 BUILD		:=	build
 SOURCES		:=	.
 INCLUDES	:=	. ../lib/pngu
@@ -95,10 +95,10 @@ clean:
 
 #---------------------------------------------------------------------------------
 install:
-	@mkdir -p $(DESTDIR)/lib $(DESTDIR)/include/grrlib
+	@mkdir -p $(DESTDIR)/lib $(DESTDIR)/include/grrlibplus
 	@cp -f $(OUTPUT) $(DESTDIR)/lib
 	@cp -f $(HDR) $(DESTDIR)/include
-	@cp -f $(INL) $(DESTDIR)/include/grrlib
+	@cp -f $(INL) $(DESTDIR)/include/grrlibplus
 
 #---------------------------------------------------------------------------------
 else

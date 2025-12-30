@@ -4,7 +4,7 @@
 
         How To use Bitmap Fonts
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <ogc/lwp_watchdog.h>   // Needed for gettime and ticks_to_millisecs
 #include <stdlib.h>

@@ -4,7 +4,7 @@
 
         Minimum Code To Use GRRLIB
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <wiiuse/wpad.h>

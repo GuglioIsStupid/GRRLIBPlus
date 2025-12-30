@@ -5,7 +5,7 @@
     TileStudio (http://tilestudio.sourceforge.net/)
     Special Greetings to TLB for some GFx ;=)
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

@@ -20,8 +20,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ------------------------------------------------------------------------------*/
 
-#include "grrlib/GRRLIB_private.h"
-#include <grrlib.h>
+#include "grrlibplus/GRRLIB_private.h"
+#include <grrlibplus.h>
 #include <wchar.h>
 #include <ft2build.h>
 #include FT_FREETYPE_H

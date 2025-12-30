@@ -3,7 +3,7 @@
     Simple Textured 3D cube and Compositing
     to make a nice sin wave on it ;)
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

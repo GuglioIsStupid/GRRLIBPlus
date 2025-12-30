@@ -5,7 +5,7 @@
         This example shows a basic particle
         engine creating a Smokebomb.
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <algorithm>
 #include <cstdlib>

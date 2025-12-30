@@ -3,7 +3,7 @@
     A sample code to show how to use Dynamic Texturing
     Have a look a TileDemo sources for diff ;)
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

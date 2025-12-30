@@ -1,7 +1,7 @@
 /*===========================================
     NoNameNo Compositing Sample Code
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <ogc/pad.h>

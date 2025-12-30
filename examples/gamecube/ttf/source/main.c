@@ -1,7 +1,7 @@
 /*===========================================
         TrueType Font demo
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <stdio.h>

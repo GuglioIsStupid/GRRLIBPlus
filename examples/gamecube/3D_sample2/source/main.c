@@ -2,7 +2,7 @@
     NoNameNo
     Simple Textured 3D cube
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

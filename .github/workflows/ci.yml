@@ -17,8 +17,8 @@ jobs:
 
     - name: Build library and examples
       run: |
-        make -C GRRLIB clean all install
-        make -C GRRLIB/GRRLIB PLATFORM=cube clean all install
+        make -C GRRLIBPlus clean all install
+        make -C GRRLIBPlus/GRRLIBPlus PLATFORM=cube clean all install
         make -C examples
         /opt/devkitpro/portlibs/wii/bin/powerpc-eabi-cmake -S $GITHUB_WORKSPACE/examples/cmake -B /tmp/build-wii -G Ninja
         cmake --build /tmp/build-wii --verbose

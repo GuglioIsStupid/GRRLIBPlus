@@ -2,7 +2,7 @@
     NoNameNo simple Gradient Sinusoid
         A good start to code a nice plasma
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

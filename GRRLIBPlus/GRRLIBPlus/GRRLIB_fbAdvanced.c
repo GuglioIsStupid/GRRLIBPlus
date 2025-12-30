@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 #include <math.h>
 
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 /**
  * Draw an ellipse.

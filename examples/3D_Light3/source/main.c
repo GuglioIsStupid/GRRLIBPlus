@@ -3,7 +3,7 @@
 
     A little Specular light sample code
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <wiiuse/wpad.h>

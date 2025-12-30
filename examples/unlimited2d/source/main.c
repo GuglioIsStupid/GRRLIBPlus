@@ -2,7 +2,7 @@
     NoNameNo FAKE Unlimited 2D Sprites rout ;)
     It's a lame but Well Known technic....
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

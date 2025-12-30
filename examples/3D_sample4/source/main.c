@@ -3,7 +3,7 @@
     object have to be triangulated to be used
     with this source.
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

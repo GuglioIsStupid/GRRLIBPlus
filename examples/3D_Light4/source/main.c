@@ -2,7 +2,7 @@
         GRRLIB
     Spot Light Sample Code
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

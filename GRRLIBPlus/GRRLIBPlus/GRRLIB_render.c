@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 #include <math.h>
 
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 extern GRRLIB_drawSettings GRRLIB_Settings;
 extern Mtx                 GXmodelView2D;

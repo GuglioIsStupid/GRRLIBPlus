@@ -2,7 +2,7 @@
     NoNameNo
     Simple Diffuse light sample code
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

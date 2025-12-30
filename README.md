@@ -144,7 +144,7 @@ make PLATFORM=cube clean all install
 After everything is installed, simply put
 
 ```c
-#include <grrlib.h>
+#include <grrlibplus.h>
 ```
 
 at the top of your .c/.cpp file and use the functions as required

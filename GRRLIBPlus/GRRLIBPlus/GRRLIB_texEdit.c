@@ -26,7 +26,7 @@ THE SOFTWARE.
 #include <jpeglib.h>
 #include <string.h>
 
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #define TPL_HDR_VERSION_FIELD       0   /**< Version field. */
 #define TPL_HDR_NTEXTURE_FIELD      4   /**< Texture field. */

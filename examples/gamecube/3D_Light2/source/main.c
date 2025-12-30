@@ -2,7 +2,7 @@
     NoNameNo
     Simple Lights and GRRLIB_ObjectViewInv sample
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <math.h>

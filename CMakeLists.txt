@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.18)
-project(grrlib)
+project(grrlibplus)
 
-option(GRRLIB_INSTALL "Generate the install target" ON)
+option(GRRLIBPLUS_INSTALL "Generate the install target" ON)
 
 include(GNUInstallDirs)
 
@@ -15,12 +15,12 @@ add_library(pngu STATIC)
 
 target_sources(pngu
   PRIVATE
-  "${CMAKE_CURRENT_SOURCE_DIR}/GRRLIB/lib/pngu/pngu.c"
+  "${CMAKE_CURRENT_SOURCE_DIR}/GRRLIBPlus/lib/pngu/pngu.c"
 )
 
 target_include_directories(pngu
   PUBLIC
-  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/GRRLIB/lib/pngu>"
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/GRRLIBPlus/lib/pngu>"
   PRIVATE
   ${PNG_INCLUDE_DIRS}
 )
@@ -38,7 +38,7 @@ target_compile_options(grrlib
   -Wunused
 )
 
-file(GLOB_RECURSE GRRLIB_SRC_FILES "${CMAKE_CURRENT_SOURCE_DIR}/GRRLIB/GRRLIB/*.c")
+file(GLOB_RECURSE GRRLIB_SRC_FILES "${CMAKE_CURRENT_SOURCE_DIR}/GRRLIBPlus/GRRLIBPlus/*.c")
 target_sources(grrlib
   PRIVATE
   "${GRRLIB_SRC_FILES}"
@@ -46,26 +46,26 @@ target_sources(grrlib
 
 target_include_directories(grrlib
   PUBLIC
-  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/GRRLIB/GRRLIB>"
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/GRRLIBPlus/GRRLIB>"
   PRIVATE
-  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/GRRLIB/GRRLIB/grrlib>"
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/GRRLIBPlus/GRRLIBPlus/grrlib>"
   ${FREETYPE_INCLUDE_DIRS}
   ${JPEG_INCLUDE_DIRS}
 )
 
-target_link_libraries(grrlib PUBLIC
+target_link_libraries(grrlibplus PUBLIC
   pngu
 )
 
 if(GRRLIB_INSTALL)
 
   install(
-    DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/GRRLIB/GRRLIB/"
+    DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/GRRLIBPlus/GRRLIBPlus/"
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
     FILES_MATCHING PATTERN "*.h"
   )
 
-  install(TARGETS pngu grrlib
+  install(TARGETS pngu grrlibplus
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
   )
 

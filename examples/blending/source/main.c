@@ -5,7 +5,7 @@
         This example shows the different
         new blending modes.
 ============================================*/
-#include <grrlib.h>
+#include <grrlibplus.h>
 
 #include <stdlib.h>
 #include <wiiuse/wpad.h>
