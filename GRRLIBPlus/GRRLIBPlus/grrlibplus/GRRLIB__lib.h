@@ -110,9 +110,10 @@ void  GRRLIB_PrintBMF (const f32 xpos, const f32 ypos,
 GRRLIB_Matrix  GRRLIB_CurrentMatrix  (void);
 void           GRRLIB_LoadMatrix     (const GRRLIB_Matrix *mat);
 void           GRRLIB_SetMatrix      (GRRLIB_Matrix *mat);
-void           GRRLIB_Scale          (f32 scaleX, f32 scaleY);
+void           GRRLIB_Translate      (f32 translationX, f32 translationY);
 void           GRRLIB_Rotate         (f32 deg);
-void           GRRLIB_Translate      (GRRLIB_Matrix *mat);
+void           GRRLIB_Scale          (f32 scaleX, f32 scaleY);
+void           GRRLIB_Transform      (GRRLIB_Matrix *mat);
 void           GRRLIB_Origin         (void);
 
 //------------------------------------------------------------------------------
