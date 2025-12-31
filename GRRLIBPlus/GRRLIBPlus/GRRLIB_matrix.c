@@ -17,6 +17,11 @@ void GRRLIB_SetMatrix(GRRLIB_Matrix *mat) {
     GX_LoadPosMtxImm(GXmodelView2D, GX_PNMTX0);
 }
 
+void GRRLIB_LoadMatrix(const GRRLIB_Matrix *mat) {
+    guMtxCopy(mat->matrix, GXmodelView2D); // literally just setmatrix, idk which i should stick with though... hmm
+    GX_LoadPosMtxImm(GXmodelView2D, GX_PNMTX0);
+}
+
 void GRRLIB_Translate(f32 translationX, f32 translationY) {
 
 }
