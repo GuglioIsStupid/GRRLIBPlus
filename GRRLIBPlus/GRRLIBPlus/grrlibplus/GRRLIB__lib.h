@@ -96,7 +96,7 @@ GRRLIB_ttfFont*  GRRLIB_LoadTTFFromFile     (const char* filename);
 bool             GRRLIB_ScrShot             (const char* filename);
 
 //------------------------------------------------------------------------------
-// GRRLIB_print.c - Will someone please tell me what these are :)
+// GRRLIB_print.c - Will someone please tell me what these are :) (I think they might be for text... hmmm)
 void  GRRLIB_Printf   (const f32 xpos, const f32 ypos,
                        const GRRLIB_texImg *tex, const u32 color,
                        const f32 zoom, const char *text, ...);
@@ -104,6 +104,16 @@ void  GRRLIB_Printf   (const f32 xpos, const f32 ypos,
 void  GRRLIB_PrintBMF (const f32 xpos, const f32 ypos,
                        const GRRLIB_bytemapFont *bmf,
                        const char *text, ...);
+
+//------------------------------------------------------------------------------
+// GRRLIB_matrix.c - Matrix functions
+GRRLIB_Matrix  GRRLIB_CurrentMatrix  (void);
+void           GRRLIB_LoadMatrix     (const GRRLIB_Matrix *mat);
+void           GRRLIB_SetMatrix      (GRRLIB_Matrix *mat);
+void           GRRLIB_Scale          (f32 scaleX, f32 scaleY);
+void           GRRLIB_Rotate         (f32 deg);
+void           GRRLIB_Translate      (GRRLIB_Matrix *mat);
+void           GRRLIB_Origin         (void);
 
 //------------------------------------------------------------------------------
 // GRRLIB_render.c - Rendering functions

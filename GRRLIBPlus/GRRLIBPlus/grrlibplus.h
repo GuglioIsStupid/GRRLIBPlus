@@ -161,6 +161,11 @@ typedef  struct GRRLIB_Font {
     bool kerning;   /**< true whenever a face object contains kerning data that can be accessed with FT_Get_Kerning. */
 } GRRLIB_ttfFont;
 
+// [PLUS_ADDITION]
+typedef struct GRRLIB_Matrix {
+    Mtx matrix;
+} GRRLIB_Matrix;
+
 //==============================================================================
 // Allow general access to screen and frame information
 //==============================================================================
@@ -177,6 +182,8 @@ typedef  struct GRRLIB_Font {
 GRR_EXTERN  GXRModeObj  *rmode; /**< Video mode. */
 GRR_EXTERN  void        *xfb[2]  GRR_INITS(NULL, NULL);
 GRR_EXTERN  u32         fb       GRR_INIT(0);
+GRR_EXTERN  Mtx         GXmodelView2D;
+
 //==============================================================================
 // procedure and function prototypes
 // Inline function handling
